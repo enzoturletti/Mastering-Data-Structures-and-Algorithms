@@ -1,0 +1,130 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:132.0) Gecko/20100101 Firefox/132.0" version="24.9.0">
+  <diagram name="Page-1" id="pscVqw5MkYJO_kQoXnNj">
+    <mxGraphModel dx="2087" dy="911" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="UklUZHvSJKsa5OGrX6ZT-1" value="&lt;div align=&quot;center&quot;&gt;&lt;strong&gt;&lt;u&gt;Combinations or nCr&lt;br&gt;&lt;/u&gt;&lt;/strong&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="538" y="14" width="217" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="UklUZHvSJKsa5OGrX6ZT-2" value="&lt;div align=&quot;center&quot;&gt;C(n,r) = n! / (r! * (n-r)!)&lt;br&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="509.5028571428571" y="44" width="274" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="UklUZHvSJKsa5OGrX6ZT-6" value="&lt;b&gt;int &lt;/b&gt;fact(&lt;b&gt;int &lt;/b&gt;n)&lt;br&gt;&lt;div&gt;{&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;int F = 1;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;for (int i = 1; i &amp;lt;= n; i++)&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;{&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;F = F*i;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;}&#x9;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;return F;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;}&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="67.00285714285712" y="96" width="274" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="UklUZHvSJKsa5OGrX6ZT-7" value="Time Complexity = O(n)&lt;br&gt;&amp;nbsp; Space Complexity = O(1)&amp;nbsp;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-15" y="238" width="312" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="UklUZHvSJKsa5OGrX6ZT-8" value="&lt;b&gt;int &lt;/b&gt;fact(&lt;b&gt;int &lt;/b&gt;n)&lt;br&gt;&lt;div&gt;{&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;if (n==0)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;{&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;return 1;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;}&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;else&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;{&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;return factorial(n-1)*n;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;}&lt;br&gt;&lt;/div&gt;}" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="67.00285714285712" y="282" width="274" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="UklUZHvSJKsa5OGrX6ZT-9" value="Time Complexity = O(n)&lt;br&gt;Space Complexity = O(n) &lt;font color=&quot;#999999&quot;&gt;(due the recursion stack usage)&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="48" y="450" width="312" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="UklUZHvSJKsa5OGrX6ZT-10" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="33" y="82" width="336" height="416" as="geometry" />
+        </mxCell>
+        <mxCell id="UklUZHvSJKsa5OGrX6ZT-11" value="Factorial function" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="158" y="52" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="UklUZHvSJKsa5OGrX6ZT-12" value="&lt;b&gt;&lt;u&gt;Using factorial functions&lt;/u&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="389" y="80" width="149" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="UklUZHvSJKsa5OGrX6ZT-13" value="&lt;b&gt;int &lt;/b&gt;C(&lt;b&gt;int &lt;/b&gt;n, &lt;b&gt;int &lt;/b&gt;r)&lt;br&gt;&lt;div&gt;{&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;int t0 = fact(n);&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;int t1 = fact(r);&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;int t2 = fact(n-r);&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;return t0/(t1*t2)&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="509.5028571428571" y="111" width="274" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="UklUZHvSJKsa5OGrX6ZT-14" value="Time Complexity = O(n) + O(r) + O(n-r)&lt;br&gt;Space Complexity = O(1)&amp;nbsp;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="346" y="275" width="312" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="UklUZHvSJKsa5OGrX6ZT-15" value="&lt;b&gt;&lt;u&gt;Time Space Complexity using iterative fact&lt;br&gt;&lt;/u&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="427.5" y="238" width="149" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="UklUZHvSJKsa5OGrX6ZT-16" value="Time Complexity = O(n) + O(r) + O(n-r)&lt;br&gt;Space Complexity = O(n) " style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="586" y="275" width="312" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="UklUZHvSJKsa5OGrX6ZT-17" value="&lt;b&gt;&lt;u&gt;Time Space Complexity using recursive fact&lt;br&gt;&lt;/u&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="667.5" y="238" width="149" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="UklUZHvSJKsa5OGrX6ZT-18" value="&lt;b&gt;&lt;u&gt;Using recursion with Pascal Triangle without memorization&lt;br&gt;&lt;/u&gt;&lt;/b&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="389" y="327" width="342" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="UklUZHvSJKsa5OGrX6ZT-29" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="412" y="362" width="240" height="99" as="geometry" />
+        </mxCell>
+        <mxCell id="UklUZHvSJKsa5OGrX6ZT-19" value="1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="UklUZHvSJKsa5OGrX6ZT-29">
+          <mxGeometry x="90.5" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="UklUZHvSJKsa5OGrX6ZT-20" value="1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="UklUZHvSJKsa5OGrX6ZT-29">
+          <mxGeometry x="60" y="24" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="UklUZHvSJKsa5OGrX6ZT-21" value="1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="UklUZHvSJKsa5OGrX6ZT-29">
+          <mxGeometry x="120" y="24" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="UklUZHvSJKsa5OGrX6ZT-22" value="1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="UklUZHvSJKsa5OGrX6ZT-29">
+          <mxGeometry x="30.5" y="47" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="UklUZHvSJKsa5OGrX6ZT-23" value="1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="UklUZHvSJKsa5OGrX6ZT-29">
+          <mxGeometry x="150.5" y="47" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="UklUZHvSJKsa5OGrX6ZT-24" value="2" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="UklUZHvSJKsa5OGrX6ZT-29">
+          <mxGeometry x="90.5" y="47" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="UklUZHvSJKsa5OGrX6ZT-25" value="1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="UklUZHvSJKsa5OGrX6ZT-29">
+          <mxGeometry y="69" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="UklUZHvSJKsa5OGrX6ZT-26" value="1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="UklUZHvSJKsa5OGrX6ZT-29">
+          <mxGeometry x="180" y="69" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="UklUZHvSJKsa5OGrX6ZT-27" value="3" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="UklUZHvSJKsa5OGrX6ZT-29">
+          <mxGeometry x="60" y="69" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="UklUZHvSJKsa5OGrX6ZT-28" value="3" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="UklUZHvSJKsa5OGrX6ZT-29">
+          <mxGeometry x="120" y="69" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="UklUZHvSJKsa5OGrX6ZT-30" value="=" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="669" y="391" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="UklUZHvSJKsa5OGrX6ZT-31" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="741" y="363" width="240" height="99" as="geometry" />
+        </mxCell>
+        <mxCell id="UklUZHvSJKsa5OGrX6ZT-32" value="C(0,0)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="UklUZHvSJKsa5OGrX6ZT-31">
+          <mxGeometry x="90.5" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="UklUZHvSJKsa5OGrX6ZT-33" value="C(1,0)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="UklUZHvSJKsa5OGrX6ZT-31">
+          <mxGeometry x="60" y="24" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="UklUZHvSJKsa5OGrX6ZT-34" value="C(1,1)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="UklUZHvSJKsa5OGrX6ZT-31">
+          <mxGeometry x="120" y="24" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="UklUZHvSJKsa5OGrX6ZT-35" value="C(2,0)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="UklUZHvSJKsa5OGrX6ZT-31">
+          <mxGeometry x="30.5" y="47" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="UklUZHvSJKsa5OGrX6ZT-36" value="C(2,2)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="UklUZHvSJKsa5OGrX6ZT-31">
+          <mxGeometry x="150.5" y="47" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="UklUZHvSJKsa5OGrX6ZT-37" value="C(2,1)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="UklUZHvSJKsa5OGrX6ZT-31">
+          <mxGeometry x="90.5" y="47" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="UklUZHvSJKsa5OGrX6ZT-38" value="C(3,0)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="UklUZHvSJKsa5OGrX6ZT-31">
+          <mxGeometry y="69" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="UklUZHvSJKsa5OGrX6ZT-39" value="C(3,3)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="UklUZHvSJKsa5OGrX6ZT-31">
+          <mxGeometry x="180" y="69" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="UklUZHvSJKsa5OGrX6ZT-40" value="C(3,1)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="UklUZHvSJKsa5OGrX6ZT-31">
+          <mxGeometry x="60" y="69" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="UklUZHvSJKsa5OGrX6ZT-41" value="C(3,2)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="UklUZHvSJKsa5OGrX6ZT-31">
+          <mxGeometry x="120" y="69" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="UklUZHvSJKsa5OGrX6ZT-42" value="&lt;b&gt;int &lt;/b&gt;C(&lt;b&gt;int &lt;/b&gt;n, &lt;b&gt;int &lt;/b&gt;r)&lt;br&gt;&lt;div&gt;{&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;if ( r == 0 || (n==r)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;{&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;return 1;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;}&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;return C(n-1,r-1)+C(n-1,r);&lt;br&gt;&lt;/div&gt;}" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="423.0028571428571" y="486" width="274" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="UklUZHvSJKsa5OGrX6ZT-43" value="Time Complexity = O(2&lt;span&gt;^&lt;/span&gt;n) &lt;font color=&quot;#999999&quot;&gt;(for large n we have approx 2 calls by level)&lt;/font&gt;&lt;br&gt;Space Complexity = O(n)&amp;nbsp;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="690" y="531" width="379" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
